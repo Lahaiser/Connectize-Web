@@ -1,0 +1,135 @@
+/*============= HERO ============*/
+.bgheromovie h1{
+    text-align: left;
+    font-size: 1.7em;
+    font-family: monospace;
+    width: 90%;
+    margin: auto;
+    line-height: 1.1
+}
+.header__h1tab{
+    padding-top: 8em;
+    color: white;
+}
+.typebar{
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+    
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/*== HEROBGVIDEO ==*/
+#bgheromov {
+    position: fixed;
+    z-index: -1;
+    width: 100%;     
+    height: auto;
+}
+@media (min-aspect-ratio: 16/9) {
+    #bgheromov {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-width: 767px) {
+    .bgheromovie{
+        background: linear-gradient(#003F5A, transparent), url("../img/herobg-1080.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background;   
+        height: 100vh;
+        padding: 0;
+    }
+    #bgheromov {
+        display: none;
+    }
+}
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+/*============= SESSÃO SERVIÇOS ============*/
+.services{
+    line-height: 1.4;
+}
+.services__area{
+    outline: 1px solid lightgray;
+    padding: .6em 0;
+    border-right: #0098DA 3px solid;
+}
+.servicesarea__icon{
+    padding: 0 .7em;
+}
+.servicesarea__icon img{
+    width: 6.5em;
+    padding: .1em;
+}
+.servicesarea__text h4{
+   font-size: 1.2em;
+}
+.servicesarea__text ul{
+    padding: 0;
+    margin: 0;
+}
+.servicesarea__text ul li{
+    list-style-type: none;
+    font-size: 14px;
+}
+.services button{
+    float: right;
+}
+/*============= SESSÃO MENTIONS ============*/
+.carousel-item button{
+    text-align: right !important;
+}
+.testimonial-card{
+    background-image: url("../img/clientsmention_bg.jpg");
+    background-size:cover;
+    background-position: center bottom;
+    
+}
+.testimonialhead-card{
+    background-image: linear-gradient(to right, #001b27, #053340, #124d57, #23686d, #3a8581, #459586, #56a589, #6cb48a, #7bb97e, #8fbc70, #a6be62, #bfbf56);
+}
+.line-spacing{
+    width: 100%;
+    background: #00A0E5;
+    height: .2px;
+}
+/*============= CONTACT SERVIÇOS============*/
+.contact button{
+    margin-top: 0em !important;
+}
+.contact .card{
+    background: none;
+    box-shadow: none;
+}
+.card-header{
+    background: none;
+    border-bottom: none;
+}
+
